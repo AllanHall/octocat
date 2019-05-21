@@ -113,8 +113,9 @@ class App extends Component {
             <img
               className="image-area"
               src={cats.map(cat => {
-                return <Cats key={cat.name} outerImageUrl={cat.outerImageUrl} />
+                return <Cats key={cat.name} outerImageUrl={cat.picUrl} />
               })}
+              alt=""
             />
             <section className="caption">
               <p>
@@ -135,9 +136,10 @@ class App extends Component {
                 <img
                   src={cats.map(cat => {
                     return (
-                      <Cats key={cat.name} innerImageUrl={cat.innerImageUrl} />
+                      <Cats key={cat.name} innerImageUrl={cat.pictureUrl} />
                     )
                   })}
+                  alt=""
                 />
                 })}
               </div>

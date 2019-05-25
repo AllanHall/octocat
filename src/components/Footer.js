@@ -5,12 +5,12 @@ class Footer extends Component {
     return (
       <div>
         <footer>
-          <div class="bottom-links">
+          <div className="bottom-links">
             <p>RSS</p>
             <p>FAQ</p>
           </div>
-          <i class="fab fa-github" />
-          <div class="copyright">
+          <i className="fab fa-github" />
+          <div className="copyright">
             <p>© 2013 – 2018 GitHub, Inc.</p>
             <p>All rights reserved.</p>
           </div>

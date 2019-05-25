@@ -4,16 +4,17 @@ class CatCell extends Component {
   render() {
     return (
       <>
-        <div class="outer-image">
+        <div className="outer-image">
           <img
-            class="image-area"
-            src="https://octodex.github.com/images/saritocat.png"
+            className="image-area"
+            src={this.props.firstImage}
+            alt="star wars cats"
           />
-          <section class="caption">
-            <p>#114</p>
-            <div class="name-pic">
-              <p>the Saritocat by</p>
-              <img src="https://github.com/JohnCreek.png" />
+          <section className="caption">
+            <p>{this.props.number}</p>
+            <div className="name-pic">
+              <p>the {this.props.name} by</p>
+              <img src={this.props.secondImage} alt="creator logo" />
             </div>
           </section>
         </div>
